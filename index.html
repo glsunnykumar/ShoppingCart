@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group-3 Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Website Header -->
+    <header>
+        <h1>🛒 Group-3 Shopping Store</h1>
+        <p>Your one-stop shop for trendy products</p>
+        <!-- Search Bar -->
+         <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for products..." onkeyup="searchProducts()">
+         </div>
+    </header>
+
+    <!-- Product List -->
+    <section class="products">
+        <div class="product">
+            <img src="c:/Users/Gulshan Kumar/Desktop/The Website/Images/Black-T-shirt.webp" alt="Cool T-Shirt">
+            <h3>Cool T-Shirt</h3>
+            <p class="price">₹700</p>
+            <button onclick="addToCart('Cool T-Shirt')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="c:/Users/Gulshan Kumar/Desktop/The Website/Images/Manchester-United-Football-Cap.jpg" alt="Stylish Cap">
+            <h3>Stylish Cap</h3>
+            <p class="price">₹200</p>
+            <button onclick="addToCart('Stylish Cap')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="c:/Users/Gulshan Kumar/Desktop/The Website/Images/bhgdyhfevregyhfgredhfgdre.webp" alt="Leather Wallet">
+            <h3>Leather Wallet</h3>
+            <p class="price">₹850</p>
+            <button onclick="addToCart('Leather Wallet')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="c:/Users/Gulshan Kumar/Desktop/The Website/Images/mast shoes.jfif" alt="Sports Shoes">
+            <h3>Sports Shoes</h3>
+            <p class="price">₹2200</p>
+            <button onclick="addToCart('Sports Shoes')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="c:/Users/Gulshan Kumar/Desktop/The Website/Images/mast watch.webp" alt="Wrist Watch">
+            <h3>Wrist Watch</h3>
+            <p class="price">₹1500</p>
+            <button onclick="addToCart('Wrist Watch')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="c:/Users/Gulshan Kumar/Desktop/The Website/Images/mast bag.webp" alt="Backpack">
+            <h3>Backpack</h3>
+            <p class="price">₹1200</p>
+            <button onclick="addToCart('Backpack')">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section class="cart-section">
+        <h2>🛍 Shopping Cart</h2>
+        <div id="cart">Your cart is empty</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Group-3 Shopping Store | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
