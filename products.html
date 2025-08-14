@@ -21,15 +21,17 @@
   </header>
 
   <!-- Search bar -->
-  <section class="search-section">
-    <input type="text" id="search-bar" placeholder="Search products...">
-  </section>
+ <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()" />
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+
 
   <!-- Product list -->
   <section class="products" id="product-list">
     <!-- Products will be added dynamically from JS -->
   </section>
-
+  <script src="script.js"></script>
   <script>
     // Sample product data
     const products = [

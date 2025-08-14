@@ -12,17 +12,18 @@ const prices = {
 
 function searchProducts() {
     let input = document.getElementById("searchInput").value.toLowerCase();
-    let products = document.querySelectorAll(".product");
+    let products = document.getElementsByClassName("product-card");
 
-    products.forEach(product => {
-        let productName = product.querySelector("h3").textContent.toLowerCase();
+    for (let i = 0; i < products.length; i++) {
+        let productName = products[i].querySelector("h3").innerText.toLowerCase();
         if (productName.includes(input)) {
-            product.style.display = "block"; // show matching products
+            products[i].style.display = "";
         } else {
-            product.style.display = "none";  // hide non-matching products
+            products[i].style.display = "none";
         }
-    });
+    }
 }
+
 
 
 function addToCart(productName) {
