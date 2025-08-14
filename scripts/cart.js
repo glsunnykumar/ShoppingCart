@@ -1,4 +1,3 @@
-// Get cart from localStorage or empty array
 let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
 const cartContainer = document.getElementById('cart');
@@ -17,12 +16,16 @@ function displayCart() {
     cartItems.forEach((item, index) => {
         totalAmount += item.price * item.quantity;
 
-        const itemElement = document.createElement('p');
+        const itemElement = document.createElement('div');
+        itemElement.classList.add('cart-item');
+
         itemElement.innerHTML = `
-            ${item.name} - ₹${item.price} x 
+            <img src="${item.image}" alt="${item.name}">
+            <span class="item-name">${item.name}</span>
+            <span class="item-price">₹${item.price}</span>
             <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)">
-            = ₹${item.price * item.quantity}
-            <button class="remove" onclick="removeItem(${index})">Remove</button>
+            <span class="item-total">₹${item.price * item.quantity}</span>
+            <button class="remove" onclick="removeItem(${index})">❌</button>
         `;
         cartContainer.appendChild(itemElement);
     });
@@ -42,5 +45,4 @@ function updateQuantity(index, newQuantity) {
     displayCart();
 }
 
-// Initialize display
 displayCart();
