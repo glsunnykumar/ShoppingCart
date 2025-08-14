@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group-3 Shopping</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Website Header -->
     <header>
         <h1>🛒 Group-3 Shopping Store</h1>
         <p>Your one-stop shop for trendy products</p>
         <!-- Search Bar -->
-         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search for products..." onkeyup="searchProducts()">
-         </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()" />
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+
+
     </header>
 
-        <nav class="menu">
+    <nav class="menu">
         <ul>
             <li><a href="index.html">🏠 Home</a></li>
             <li><a href="products.html">🛍 Products</a></li>
@@ -78,4 +83,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
