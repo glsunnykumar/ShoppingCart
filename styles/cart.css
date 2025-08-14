@@ -1,0 +1,72 @@
+/* -------- Cart Page Styling -------- */
+.cart-section {
+    max-width: 650px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.cart-section h2 {
+    text-align: center;
+    color: #ff7e5f;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Cart Items */
+#cart p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Remove Button */
+#cart .remove {
+    background: #ff4d4d;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+#cart .remove:hover {
+    background: #d93636;
+}
+
+/* Empty Cart Message */
+#cart p.empty {
+    background: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background: #1a5cd8;
+}
