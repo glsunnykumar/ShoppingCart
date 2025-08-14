@@ -90,7 +90,7 @@
 
 .cart-item {
     display: grid;
-    grid-template-columns: 50px 1fr 80px 80px 100px 50px;
+    grid-template-columns: 50px 1fr 80px 80px 100px 40px;
     align-items: center;
     gap: 10px;
     background: #f9f9f9;
@@ -119,8 +119,10 @@
 .cart-item .remove {
     background: transparent;
     border: none;
-    font-size: 18px;
     cursor: pointer;
+    padding: 5px;
+    color: #888;
+    transition: color 0.3s;
 }
 
 .cart-item .remove:hover {
