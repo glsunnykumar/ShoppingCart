@@ -61,3 +61,9 @@ function removeFromCart(productName) {
     cart = cart.filter(p => p.name !== productName);
     displayCart();
 }
+
+function signIn() {
+    // For now, just simulate a login
+    document.querySelector('.sign-in-btn').style.display = 'none';
+    document.getElementById('profile').style.display = 'block';
+}
